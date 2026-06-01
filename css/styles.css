@@ -507,4 +507,15 @@ a.cd__value:hover { color: #f0c9b4; }
   .lightbox__nav { width: 42px; height: 42px; }
   .about__stats { gap: 1.5rem; }
   .hero { min-height: 90vh; }
+  .nav-wrap { gap: 0.9rem; }
+  .menu-toggle { flex: none; }
+  .brand { min-width: 0; }            /* allow the brand to shrink in the flex row */
+  .brand__logo { height: 19px; }
+}
+
+/* Tiny / magnified viewports (~320px effective) — keep everything on one row, no h-scroll */
+@media (max-width: 380px) {
+  .nav-wrap { padding-inline: 16px; gap: 0.6rem; }
+  .brand__logo { height: 16px; }
+  .brand--footer .brand__logo { height: 20px; }
 }
