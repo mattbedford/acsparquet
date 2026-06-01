@@ -348,20 +348,8 @@ main section[id] { scroll-margin-top: 76px; } /* offset for sticky header on anc
 .green__text p { color: rgba(246,241,231,0.82); }
 .green__text p + p { margin-top: 1.1rem; }
 .green__text strong { color: var(--brand-green-l); font-weight: 700; }
-.green__link { margin-top: 1.6rem !important; }
-.green__link a { color: var(--brand-green-l); font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(157,186,115,0.4); padding-bottom: 2px; transition: border-color 0.25s; }
-.green__link a:hover { border-color: var(--brand-green-l); }
-
-.green__badges { list-style: none; padding: 0; display: grid; gap: 1rem; }
-.badge {
-  display: flex; align-items: center; gap: 1.1rem;
-  background: rgba(246,241,231,0.05); border: 1px solid rgba(246,241,231,0.14);
-  border-radius: var(--radius); padding: 1.1rem 1.3rem;
-}
-.badge img { width: 76px; height: auto; background: #fff; border-radius: 3px; padding: 5px; }
-.badge__cap { font-size: 0.85rem; color: rgba(246,241,231,0.82); line-height: 1.4; }
-.badge--text .badge__big { font-family: var(--f-display); font-size: 1.3rem; color: var(--brand-green-l); display: block; }
-.badge--text { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+.green__media { margin: 0; border-radius: var(--radius); overflow: hidden; }
+.green__media img { display: block; width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 
 /* =====================================================================
    AREA SERVED
@@ -453,12 +441,15 @@ a.cd__value:hover { color: #f0c9b4; }
 .brand--footer .brand__logo { height: 26px; }
 .footer__tag { font-family: var(--f-display); font-style: italic; font-size: 1.15rem; color: var(--taupe-soft); margin-top: 0.8rem; }
 .footer__creds { display: flex; gap: 1.1rem; align-items: flex-start; }
-.footer__zc { width: 64px; height: auto; background: #fff; border-radius: 3px; padding: 5px; flex: none; }
+.footer__tree { width: 56px; height: 56px; flex: none; opacity: 0.85; }
 .footer__cred-text { font-size: 0.85rem; line-height: 1.6; }
 .footer__cred-text strong { color: var(--brand-green-l); }
 .footer__legal p { font-size: 0.85rem; line-height: 1.7; }
 .footer__bottom { border-top: 1px solid rgba(246,241,231,0.12); padding: 1.5rem var(--gutter); text-align: center; }
 .footer__bottom p { font-size: 0.8rem; color: rgba(246,241,231,0.62); width: min(var(--wrap), 100%); margin-inline: auto; }
+.footer__built { margin-top: 0.5rem; }
+.footer__built a { color: var(--taupe-soft); text-decoration: underline; text-underline-offset: 2px; transition: color 0.25s; }
+.footer__built a:hover { color: var(--paper); }
 
 /* =====================================================================
    LIGHTBOX
