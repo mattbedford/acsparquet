@@ -1,0 +1,34 @@
+# --- OS cruft ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Editor / IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs / temp ---
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+
+# --- Dependencies / build (not used now, future-proofing) ---
+node_modules/
+dist/
+.cache/
+
+# --- Source photos: keep the optimised assets/gallery/, ignore raw dumps ---
+# (Comment these out if you'd rather version the originals too.)
+assets/wa-img/
+assets/fb-img/
